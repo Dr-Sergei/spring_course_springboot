@@ -21,8 +21,8 @@ public class MyRESTController {
         return employeeList;
     }
 
-/*    @GetMapping("/employees/{id}")
-    public Employee getEmployee(@PathVariable int id) throws JsonProcessingException {
+    @GetMapping("/employees/{id}")
+    public Employee getEmployee(@PathVariable int id) {
         Employee employee = employeeService.getEmployee(id);
 
         return employee;
@@ -48,5 +48,5 @@ public class MyRESTController {
 
         employeeService.deleteEmployee(id);
         return "Employee with id=" + id + " was successfully deleted!";
-    }*/
+    }
 }
